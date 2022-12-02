@@ -10,5 +10,3 @@ os.mkdir(folder)
 task_one_file = open(f"{folder}/task_one.py", "w")
 task_two_file = open(f"{folder}/task_two.py", "w")
 data_file = open(f"{folder}/data.txt", "w")
-
-
