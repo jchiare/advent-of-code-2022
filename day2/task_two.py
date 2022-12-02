@@ -1,9 +1,6 @@
 from typing import Tuple
 
-
 opponent_hand_dict = dict(rock="A", paper="B", scissors="C")
-my_hand = dict(rock="X", paper="Y", scissors="Z")
-
 
 LOSE_VALUE = 0
 DRAW_VALUE = 3
