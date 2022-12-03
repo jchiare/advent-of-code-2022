@@ -1,9 +1,10 @@
-def get_priority(letter : str) -> int:
+def get_priority(letter: str) -> int:
     char_point = ord(letter)
-    
-    if char_point >= 97: # lower case 
+
+    if char_point >= 97:  # lower case
         return char_point - 96
-    return char_point - 65 + 27 # uppercase
+    return char_point - 65 + 27  # uppercase
+
 
 def main():
 
@@ -13,8 +14,8 @@ def main():
         for line in file:
             line = line.strip()
             half_length_of_rucksack = int(len(line) / 2)
-            compartment_one = line[: half_length_of_rucksack]
-            compartment_two = line[half_length_of_rucksack :]
+            compartment_one = line[:half_length_of_rucksack]
+            compartment_two = line[half_length_of_rucksack:]
 
             compartment_one_chars = set(compartment_one)
 
@@ -25,10 +26,9 @@ def main():
                     if char in compartment_one_chars:
                         matching_rucksack_characters.append(priority)
                     searched_chars.add(char)
-                    
-           
-            
+
         print(sum(matching_rucksack_characters))
+
 
 if __name__ == "__main__":
     main()

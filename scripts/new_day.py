@@ -15,7 +15,7 @@ def main():
     cwd = os.getcwd()
     with open(os.path.join(cwd, "data.txt"), "r") as file:
         for line in file:
-            # do something
+            print('do something')
 
 if __name__ == "__main__":
     main()
@@ -31,4 +31,3 @@ task_two_file.write(BASE_TASK_PYTHON_CODE)
 task_one_file.close()
 task_two_file.close()
 data_file.close()
-
