@@ -1,3 +1,5 @@
+import os
+
 def get_priority(letter : str) -> int:
     char_point = ord(letter)
     
@@ -7,7 +9,8 @@ def get_priority(letter : str) -> int:
 
 def main():
 
-    with open("data.txt", "r") as file:
+    cwd = os.getcwd()
+    with open(os.path.join(cwd, "data.txt"), "r") as file:
 
         matching_rucksack_characters = list()
         file_as_list = file.readlines()
