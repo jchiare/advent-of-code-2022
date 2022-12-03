@@ -19,3 +19,9 @@ Format
 ```
 python -m black .
 ```
+
+Create skeleton for new day
+
+```
+python scripts/new_day $day$integer
+```
