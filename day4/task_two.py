@@ -14,13 +14,16 @@ def main():
                 second_number_assignment_two,
             ) = assignment_two.split("-")
 
+    #2-4,6-8
+    #2-6,4-8
+
             if int(second_number_assignment_one) >= int(
-                second_number_assignment_two
-            ) and int(first_number_assignment_one) <= int(first_number_assignment_two):
+                first_number_assignment_two
+            ) and int(first_number_assignment_one) <= int(second_number_assignment_two):
                 count += 1
             elif int(second_number_assignment_two) >= int(
-                second_number_assignment_one
-            ) and int(first_number_assignment_two) <= int(first_number_assignment_one):
+                first_number_assignment_one
+            ) and int(first_number_assignment_two) <= int(second_number_assignment_one):
                 count += 1
 
         print(count)
