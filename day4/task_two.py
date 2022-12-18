@@ -14,8 +14,8 @@ def main():
                 second_number_assignment_two,
             ) = assignment_two.split("-")
 
-    #2-4,6-8
-    #2-6,4-8
+            # 2-4,6-8
+            # 2-6,4-8
 
             if int(second_number_assignment_one) >= int(
                 first_number_assignment_two
